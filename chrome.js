@@ -1,11 +1,26 @@
-let inputBtn = document.getElementById('input-btn')
+
+
+
+
+
+
+
+
+const ulEl = document.querySelector('#ul-el')
+
+
+let myLeads = ['www.nswater', 'www.nsrice', 'www.nsestate'];
+const inputEl = document.getElementById('input-el')
+const inputBtn = document.getElementById('input-btn')
 inputBtn.addEventListener('click', let  =()=> {
-    console.log('click from ns')
+    myLeads.push(inputEl.value)
+    console.log(myLeads)
 })
 
 
-
-
+for (let i = 0; i < myLeads.length; i++){
+   ulEl.textContent += myLeads[i] + ' '
+}
 
 
 
@@ -21,11 +36,3 @@ document.title = "Chrome Extension"
 
 
 
-
-
-
-
-let openBox = document.getElementById('box')
-openBox.addEventListener('click', let =()=> {
-    console.log('i want to open the box')
-})
