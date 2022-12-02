@@ -15,11 +15,20 @@ const inputBtn = document.getElementById('input-btn')
 inputBtn.addEventListener('click', let  =()=> {
     myLeads.push(inputEl.value)
     console.log(myLeads)
+    renderLeads()
 })
 
 
-for (let i = 0; i < myLeads.length; i++){
-   ulEl.textContent += myLeads[i] + ' '
+let renderLeads = ()=>{
+
+    let listItems = '';
+    for (let i = 0; i < myLeads.length; i++){
+       listItems += "<li>" + myLeads[i] + ' </li>'
+        // const li = document.createElement('li')
+        // li.textContent = myLeads[i] + listItems;
+        // ulEl.append(li)
+    }
+    ulEl.innerHTML = listItems
 }
 
 
@@ -28,11 +37,5 @@ for (let i = 0; i < myLeads.length; i++){
 
 
 document.title = "Chrome Extension"
-
-
-
-
-
-
 
 
