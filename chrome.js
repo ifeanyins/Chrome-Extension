@@ -12,7 +12,7 @@ inputBtn.addEventListener('click', let  =()=> {
 
 
 
-// document.title = "CHrome Extension"
+document.title = "Chrome Extension"
 
 
 
