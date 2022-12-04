@@ -49,11 +49,4 @@ inputBtn.addEventListener('click', let  =()=> {
     render(myLeads)
 })
 
-
-
-
-
-
-
-
 document.title = "Chrome Extension"
